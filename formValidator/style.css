@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+
+/* *{
+    box-sizing: border-box;
+}; */
+
+body{
+    background-color : pink;
+    font-family: 'Baloo Bhai 2', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+h2{
+    text-align: center;
+}
+.container {
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+
+#form-control{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#form-control label{
+    display : block;
+}
+
+#form-control input{
+    border : 1px solid #f0f0f0;
+    display : block;
+    width: 100%;
+    height: 30px;
+
+}
+
+#form-control input:focus{
+    outline: none;
+    border-color: gray;
+}
+
+#form-control.success input{
+    border-color : green;
+}
+
+#form-control.error input{
+    border-color : red;
+}
+
+#form-control small{
+
+    color : red;
+    position: absolute;
+    visibility: hidden;
+    /* display:none; */
+}
+
+#form-control.error small{
+
+   visibility: visible;
+}
+
+
+.form button{
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    margin : 1 rem;
+    border-radius: 5px;
+    background-color: #426FC5;
+    border: none;
+    text-transform: uppercase;
+    padding : 5px 5px 5px 5px;
+    margin-top: 15px;
+    width : 100%;
+    color: white;
+}

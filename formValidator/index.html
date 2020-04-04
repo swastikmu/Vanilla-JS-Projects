@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>From Validator</title>
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+
+<div class="container">
+
+    <form action="" id="form" class='form' oninput='password2.setCustomValidity(password2.value != password.value ? "Passwords do not match." : "")'>
+
+        <h2>Register with us</h2>
+        <div id="form-control">
+            <label for="username">User Name</label>
+            <input type="text" id="username" placeholder="Enter your username" minlength="5" maxlength="10">
+            <small>Error Message</small>
+        </div>
+
+        <div id="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <small>Error Message</small>
+        </div>
+
+        <div id="form-control">
+            <label for="Password">Password</label>
+            <input type="password" id="password" placeholder="Enter your Password" minlength="8">
+            <small>Error Message</small>
+        </div>
+
+        <div id="form-control">
+            <label for="password2">Confirm Password</label>
+            <input type="password" id="password2" placeholder="Confirm your Password">
+            <small>Error Message</small>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
