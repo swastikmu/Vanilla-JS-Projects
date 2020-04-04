@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+
+/* *{
+    box-sizing: border-box;
+}; */
+
+body{
+    background-color : pink;
+    font-family: 'Baloo Bhai 2', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.movie-container select{
+    padding: 5px 5px 5px 5px;
+    border-radius:  5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.seat{
+    height: 10px;
+    width: 13px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+
+    border-radius: 3px;
+    background-color : #444451
+}
+.seat:nth-of-type(2){
+    margin-right: 20px;
+}
+
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+
+
+.seat:nth-last-of-type(2){
+    margin-left: 20px;
+}
+.row{
+    display: flex;
+}
+
+.seat.selected {
+    background-color: green;
+}
+
+.seat.occupied {
+    background-color: red;
+}
+
+.showcase{
+    background-color: rgba(0, 0 ,0.1);
+    color : white;
+    display:flex;
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 7px 7px 7px 7px;
+    justify-content: space-between;
+    /* width: 00px */
+}
+
+.showcase .seat:hover{
+    transform: scale(1);
+    cursor: default;
+}
+
+
+
+li{
+    display: flex;
+}
+
+.screen{
+    height: 100px;
+    width: 300px;
+    background-color: gray;
+    border-radius:  15px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px;
+}
+
+.container{
+    perspective: 1000px;
+}
